@@ -1,0 +1,18 @@
+{
+  "pages": [
+    {
+      "path": "/",
+      "components": [
+        { "type": "Heading", "props": { "text": "Hello from ReactGrad!" } },
+        { "type": "Button", "props": { "label": "Click Me" } }
+      ]
+    },
+    {
+      "path": "/about",
+      "components": [
+        { "type": "Heading", "props": { "text": "About ReactGrad!" } },
+        { "type": "Button", "props": { "label": "Click Me" } }
+      ]
+    }
+  ]
+}
