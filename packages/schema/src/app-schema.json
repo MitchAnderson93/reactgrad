@@ -3,15 +3,15 @@
     {
       "path": "/",
       "components": [
-        { "type": "Heading", "props": { "text": "Hello from ReactGrad!" } },
-        { "type": "Button", "props": { "label": "Click Me" } }
+        { "type": "Heading", "props": { "text": "Welcome to ReactGrad" } },
+        { "type": "Link", "props": { "to": "/about", "label": "Go to About Page" } }
       ]
     },
     {
       "path": "/about",
       "components": [
-        { "type": "Heading", "props": { "text": "About ReactGrad!" } },
-        { "type": "Button", "props": { "label": "Click Me" } }
+        { "type": "Heading", "props": { "text": "About This Project" } },
+        { "type": "Link", "props": { "to": "/", "label": "Back to Home" } }
       ]
     }
   ]

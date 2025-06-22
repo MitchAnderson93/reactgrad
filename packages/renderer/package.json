@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "react": "^19.1.0",
+    "react-router-dom": "^7.6.2",
     "@reactgrad/ui": "workspace:*"
   },
   "keywords": [],
