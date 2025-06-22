@@ -1,7 +1,7 @@
 {
   "name": "reactgrad-dev",
   "version": "1.0.0",
-  "description": "",
+  "description": "ReactGrad Monorepo Starter kit",
   "main": "index.js",
   "scripts": {
     "dev": "turbo run dev",

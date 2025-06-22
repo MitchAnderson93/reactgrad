@@ -35,11 +35,20 @@ reactgrad-starter/
 
 ## 📦 Commands:
 ```
-Apps:
-pnpm run dev
+Global monorepo:
+
+pnpm run dev            
+pnpm test	                            # Run tests across all packages
+
 ```
 
 ```
-Utilities:
-pnpm test	                    # Run tests across all packages
+Shared packages:
+
+# Build schema
+pnpm --filter @reactgrad/schema build   
+
+# Run UI tests
+pnpm --filter @reactgrad/ui test
+
 ```

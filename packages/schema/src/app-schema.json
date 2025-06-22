@@ -1,17 +1,41 @@
 {
+  "title": "ReactGrad Starter",
+  "description": "Build pixel-perfect react apps from JSON",
   "pages": [
     {
       "path": "/",
       "components": [
-        { "type": "Heading", "props": { "text": "Welcome to ReactGrad" } },
-        { "type": "Link", "props": { "to": "/about", "label": "Go to About Page" } }
+        {
+          "type": "Header",
+          "props": {
+            "text": "Welcome to ReactGrad"
+          }
+        },
+        {
+          "type": "Link",
+          "props": {
+            "to": "/about",
+            "label": "Go to About Page"
+          }
+        }
       ]
     },
     {
       "path": "/about",
       "components": [
-        { "type": "Heading", "props": { "text": "About This Project" } },
-        { "type": "Link", "props": { "to": "/", "label": "Back to Home" } }
+        {
+          "type": "Header",
+          "props": {
+            "text": "About This Project"
+          }
+        },
+        {
+          "type": "Link",
+          "props": {
+            "to": "/",
+            "label": "Back to Home"
+          }
+        }
       ]
     }
   ]
