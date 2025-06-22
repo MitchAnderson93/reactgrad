@@ -1,7 +1,7 @@
 {
   "name": "@reactgrad/renderer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Easily render React components from a JSON schema",
   "main": "src/index.tsx",
   "private": true,
   "scripts": {

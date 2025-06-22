@@ -1,19 +1,27 @@
 {
   "name": "@reactgrad/ui",
   "version": "1.0.0",
-  "description": "",
+  "description": "ReactGrad UI components and utilities",
   "main": "src/index.tsx",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "dependencies": {
     "react": "^19.1.0",
     "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^30.0.0",
     "@types/react": "^19.1.2",
-    "typescript": "~5.8.3"
+    "jsdom": "^26.1.0",
+    "sass": "^1.89.2",
+    "sass-embedded": "^1.89.2",
+    "typescript": "~5.8.3",
+    "vitest": "^3.2.4"
   },
   "keywords": [],
   "author": "",
