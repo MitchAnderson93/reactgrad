@@ -33,6 +33,61 @@ your-fork/
 └── package.json      
 ```
 
+## Building your app:
+
+```json
+{
+  "title": "ReactGrad Starter", // This will be utilised as metadata
+  "description": "Build pixel-perfect react apps from JSON", // This will be utilised as metadata
+  "theme": "bootstrap", // Theme support for 'default', 'bootstrap' and 'tailwind'
+  "pages": [ // Pages required in the CSR app
+    {
+      "path": "/", // Path taxonomy 
+      "components": [ // Desired components with type/prop maps 
+        {
+          "type": "Header",
+          "props": {
+            "text": "Welcome to ReactGrad"
+          }
+        },
+        {
+          "type": "Button",
+          "props": {
+            "to": "/about",
+            "label": "Go to About Page"
+          }
+        },
+        {
+          "type": "Link", // Link as a component (also supported in button)
+          "props": {
+            "to": "/about", // Relates to known paths in configuration
+            "label": "Go to About Page"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "components": [
+        {
+          "type": "Header",
+          "props": {
+            "text": "About This Project"
+          }
+        },
+        {
+          "type": "Link",
+          "props": {
+            "to": "/",
+            "label": "Back to Home"
+          }
+        }
+      ]
+    }
+  ]
+}
+```
+
 ## 📦 Commands:
 
 ### Monorepo:
@@ -51,3 +106,4 @@ pnpm --filter @reactgrad/schema build
 # Run UI tests
 pnpm --filter @reactgrad/ui test
 ```
+
