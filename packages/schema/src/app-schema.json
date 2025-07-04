@@ -1,6 +1,7 @@
 {
   "title": "ReactGrad Starter",
   "description": "Build pixel-perfect react apps from JSON",
+  "theme": "bootstrap",
   "pages": [
     {
       "path": "/",
@@ -9,6 +10,13 @@
           "type": "Header",
           "props": {
             "text": "Welcome to ReactGrad"
+          }
+        },
+        {
+          "type": "Button",
+          "props": {
+            "to": "/about",
+            "label": "Go to About Page"
           }
         },
         {
