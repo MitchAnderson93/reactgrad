@@ -1,4 +1,4 @@
-# 🚀 ReactGrad Starter
+# 🚀 ReactGrad starter
 
 A modern monorepo boilerplate for rapidly building internal business web apps using **React**, **TypeScript**, **Vite**, **pnpm**, and **Turborepo**.
 
@@ -6,7 +6,7 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 
 ---
 
-## 🧱 Tech Stack
+## 🧱 Tech stack
 
 | Tool             | Purpose                                   |
 |------------------|--------------------------------------------|
@@ -18,7 +18,7 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 
 ---
 
-## 📁 Folder Structure
+## 📁 Folder structure
 
 ```txt
 reactgrad-starter/
@@ -37,7 +37,7 @@ reactgrad-starter/
 ```
 Global monorepo:
 
-pnpm run dev            
+pnpm run dev                            # Run all
 pnpm test	                            # Run tests across all packages
 
 ```
