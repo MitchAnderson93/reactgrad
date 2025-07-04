@@ -21,7 +21,7 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 ## 📁 Folder structure
 
 ```txt
-reactgrad-starter/
+your-fork/
 ├── apps/
 │   └── reactgrad-csr/      # Simple CSR react app using Vite
 ├── packages/      
@@ -34,21 +34,20 @@ reactgrad-starter/
 ```
 
 ## 📦 Commands:
+
+### Monorepo:
 ```
 Global monorepo:
 
 pnpm run dev                            # Run all
 pnpm test	                            # Run tests across all packages
-
 ```
 
+### Packages:
 ```
-Shared packages:
-
 # Build schema
 pnpm --filter @reactgrad/schema build   
 
 # Run UI tests
 pnpm --filter @reactgrad/ui test
-
 ```
