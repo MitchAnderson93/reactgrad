@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from 'react';
-import type { TokenRegistry } from '../types';
+import type { TokenRegistry } from '@reactgrad/types';
 
 // Don't provide any default registry!
 const ThemeContext = createContext<TokenRegistry | null>(null);

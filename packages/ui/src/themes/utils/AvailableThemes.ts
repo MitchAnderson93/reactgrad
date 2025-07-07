@@ -1,4 +1,4 @@
-import type { TokenRegistry } from '../../types';
+import type { TokenRegistry } from '@reactgrad/types';
 import tailwindTheme from '../presets/tailwind';
 import bootstrapTheme from '../presets/bootstrap';
 

@@ -1,7 +1,7 @@
 {
   "title": "ReactGrad Starter",
   "description": "Build pixel-perfect react apps from JSON",
-  "theme": "bootstrap",
+  "theme": "default",
   "pages": [
     {
       "path": "/",

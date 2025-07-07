@@ -1,4 +1,4 @@
-import type { TextTokenMap } from '../../../../../types/text/types';
+import type { TextTokenMap } from '@reactgrad/types/text';
 
 const tailwindTextMap: TextTokenMap = {
   container: '',

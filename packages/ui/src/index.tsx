@@ -15,7 +15,6 @@ export { Header, Button, Modal, Text };
 // ThemeProvider and types which is wrapped around the renderer
 export { ThemeProvider } from './themes/ThemeProvider';
 export { getThemeFromConfig } from './themes/utils/GetTheme';
-export type { TokenRegistry } from './types';
 
 // Component map for renderer to use
 export const componentMap: Record<string, React.FC<any>> = {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useThemeTokens } from '../../themes/ThemeProvider';
-import type { ButtonVariant } from '../../types/button/types';
+import type { ButtonVariant } from '@reactgrad/types/button';
 
 export interface ButtonProps {
   label: string;
