@@ -5,12 +5,13 @@ export async function getThemeFromConfig(theme: string | TokenRegistry): Promise
 
   switch (theme) {
     case 'default':
-      return (await import('../presets/tailwind')).default; // Default to tailwind for now
     case 'bootstrap':
+      await import('../presets/bootstrap/style.scss');
       return (await import('../presets/bootstrap')).default;
     case 'tailwind':
+      await import('../presets/tailwind/style.scss');
       return (await import('../presets/tailwind')).default;
     default:
-      throw new Error(`[ReactGrad] Unknown theme "${theme}". Available: tailwind, bootstrap`);
+      throw new Error(`[ReactGrad] Unknown theme "${theme}". Available: default, bootstrap and tailwind.`);
   }
 }

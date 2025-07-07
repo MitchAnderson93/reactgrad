@@ -1,0 +1,44 @@
+{
+  "title": "App name",
+  "description": "Description",
+  "theme": "default",
+  "pages": [
+    {
+      "path": "/",
+      "components": [
+        {
+          "type": "Header",
+          "props": {
+            "text": "Welcome to ReactGrad"
+          }
+        },
+        {
+          "type": "Button",
+          "props": {
+            "to": "/about",
+            "variant": "primary",
+            "label": "Go to About Page"
+          }
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "components": [
+        {
+          "type": "Header",
+          "props": {
+            "text": "About This Project"
+          }
+        },
+        {
+          "type": "Link",
+          "props": {
+            "to": "/",
+            "label": "Back to Home"
+          }
+        }
+      ]
+    }
+  ]
+}
