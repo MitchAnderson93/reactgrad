@@ -4,9 +4,17 @@ A modern monorepo boilerplate for rapidly building internal business web apps us
 
 Ideal for onboarding grad-level engineers into building pixel-perfect apps driven by a JSON schema.
 
+## 📚 On this page:
+
+- [🧱 Tech Stack](#-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [🛠️ Development Commands](#️-development-commands)
+- [🚀 Quick Start](#-quick-start)
+- [📖 Documentation](#-documentation)
+
 ---
 
-## 🧱 Tech stack
+## 🧱 Tech Stack
 
 | Tool             | Purpose                                   |
 |------------------|--------------------------------------------|
@@ -18,92 +26,47 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 
 ---
 
-## 📁 Folder structure
+## 📁 Project Structure
 
-```txt
-your-fork/
-├── apps/
-│   └── reactgrad-csr/      # Simple CSR react app using Vite
-├── packages/      
-│   └── ui/                 # Reusable UI elements across multiple /apps/
-│   └── schema/             # Configuration as JSON
-│   └── renderer/           # Renders from schema
-├── turbo.json              # Turborepo pipeline config
-├── pnpm-workspace.yaml 
-└── package.json      
+```
+reactgrad-dev/
+├── 📱 apps/
+│   └── reactgrad-csr/          # Client-side React application
+├── 📦 packages/
+│   ├── ui/                     # Shared UI components & themes
+│   ├── schema/                 # JSON configuration schemas
+│   └── renderer/               # Schema-to-component renderer
+├── ⚙️  turbo.json              # Turborepo build pipeline
+├── 📋 pnpm-workspace.yaml      # Workspace configuration
+└── 📄 package.json             # Root dependencies
 ```
 
-## Building your app:
+## 🛠️ Development Commands
 
-```json
-{
-  "title": "ReactGrad Starter", // This will be utilised as metadata
-  "description": "Build pixel-perfect react apps from JSON", // This will be utilised as metadata
-  "theme": "bootstrap", // Theme support for 'default', 'bootstrap' and 'tailwind'
-  "pages": [ // Pages required in the CSR app
-    {
-      "path": "/", // Path taxonomy 
-      "components": [ // Desired components with type/prop maps 
-        {
-          "type": "Header",
-          "props": {
-            "text": "Welcome to ReactGrad"
-          }
-        },
-        {
-          "type": "Button",
-          "props": {
-            "to": "/about",
-            "label": "Go to About Page"
-          }
-        },
-        {
-          "type": "Link", // Link as a component (also supported in button)
-          "props": {
-            "to": "/about", // Relates to known paths in configuration
-            "label": "Go to About Page"
-          }
-        }
-      ]
-    },
-    {
-      "path": "/about",
-      "components": [
-        {
-          "type": "Header",
-          "props": {
-            "text": "About This Project"
-          }
-        },
-        {
-          "type": "Link",
-          "props": {
-            "to": "/",
-            "label": "Back to Home"
-          }
-        }
-      ]
-    }
-  ]
-}
+| Command | Description |
+|---------|-------------|
+| `pnpm gen` | 🆕 Generate a new application |
+| `pnpm build:config` | 🔧 Build configuration schema |
+| `pnpm --filter @reactgrad/ui test` | ✅ Run UI component tests |
+| `pnpm dev` | 🚀 Start development server |
+| `pnpm build` | 📦 Build all packages |
+| `pnpm lint` | 🔍 Lint all code |
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development
+pnpm dev
+
+# Run tests
+pnpm test
 ```
 
-## 📦 Commands:
+## 📖 Documentation
 
-### Monorepo:
-```
-Global monorepo:
-
-pnpm run dev                            # Run all
-pnpm test	                            # Run tests across all packages
-```
-
-### Packages:
-```
-# Build schema
-pnpm --filter @reactgrad/schema build   
-
-# Run UI tests
-pnpm --filter @reactgrad/ui test
-```
-
+- **[Development Patterns](./PATTERNS.md)** - Coding standards, theme architecture, and best practices
+- **Component Library** - Browse available UI components in `/packages/ui/src/components`
+- **Theme System** - Multi-theme support for Bootstrap and Tailwind CSS

@@ -13,7 +13,6 @@ build/
 
 # === Turborepo Cache ===
 .turbo/
-turbo/
 
 # === Vite Dev Cache ===
 .cache/

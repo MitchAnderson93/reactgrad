@@ -10,6 +10,7 @@ export interface ButtonProps {
   type?: 'button' | 'submit' | 'reset';
   to?: string; // Support for routing
   variant?: ButtonVariant; //Support for theme variants
+  onAction?: () => void; // New prop for handling actions
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -19,6 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
   type = 'button',
   to,
   variant = 'primary',
+  onAction,
 }) => {
   const tokens = useThemeTokens();
 
@@ -29,6 +31,14 @@ export const Button: React.FC<ButtonProps> = ({
   }
   
   const buttonClasses = `${tokens.button.base} ${tokens.button.variants[variant]} ${className || ''}`.trim();
+
+  const handleClick = () => {
+    if (onAction) {
+      onAction();
+    } else if (onClick) {
+      onClick();
+    }
+  };
 
   // If 'to' prop is provided, render as a Link styled as a button
   if (to) {
@@ -41,7 +51,7 @@ export const Button: React.FC<ButtonProps> = ({
 
   // Otherwise render as a regular button
   return (
-    <button type={type} onClick={onClick} className={buttonClasses}>
+    <button type={type} onClick={handleClick} className={buttonClasses}>
       {label}
     </button>
   );
