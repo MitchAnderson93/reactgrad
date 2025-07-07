@@ -48,6 +48,10 @@ export const Modal: React.FC<ModalProps> = ({
                     aria-label="Close"
                     data-testid="modal-close-button"
                   >
+<<<<<<< HEAD
+=======
+                    ×
+>>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
                   </button>
                 )}
               </div>

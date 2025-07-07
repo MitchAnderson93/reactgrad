@@ -28,10 +28,17 @@
             "type": "Modal",
             "title": "List from API",
             "fetch": {
+<<<<<<< HEAD
               "url": "https://api.restful-api.dev/objects"
             },
             "response": {
               "target": "loadingBox.data"
+=======
+              "url": "opendata:api/example"
+            },
+            "response": {
+              "target": "loadingBox.content"
+>>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
             },
             "components": [
               {
