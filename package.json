@@ -4,15 +4,19 @@
   "description": "ReactGrad Monorepo Starter kit",
   "main": "index.js",
   "scripts": {
+    "new": "turbo gen reactgrad-app",
+    "build:config": "turbo --filter @reactgrad/schema build",
     "dev": "turbo run dev",
     "build": "turbo run build",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "test:ui": "turbo --filter @reactgrad/ui test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.5.2",
   "devDependencies": {
+    "@turbo/gen": "^2.5.4",
     "@vitejs/plugin-react": "^4.5.2",
     "turbo": "^2.5.4",
     "typescript": "^5.8.3",

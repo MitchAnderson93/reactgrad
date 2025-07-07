@@ -23,9 +23,9 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 ```txt
 your-fork/
 ├── apps/
-│   └── reactgrad-csr/      # Simple CSR react app using Vite
+│   └── reactgrad-csr/      # Simple CSR react app
 ├── packages/      
-│   └── ui/                 # Reusable UI elements across multiple /apps/
+│   └── ui/                 # Reusable UI elements across /apps/
 │   └── schema/             # Configuration as JSON
 │   └── renderer/           # Renders from schema
 ├── turbo.json              # Turborepo pipeline config
@@ -35,19 +35,17 @@ your-fork/
 
 ## 📦 Commands:
 
-### Monorepo:
+### Start a new app:
 ```
-Global monorepo:
-
-pnpm run dev                            # Run all
-pnpm test	                            # Run tests across all packages
+pnpm gen
 ```
 
-### Packages:
+### Build schema
 ```
-# Build schema
-pnpm --filter @reactgrad/schema build   
+pnpm build:config
+```
 
-# Run UI tests
+### Run UI tests
+```
 pnpm --filter @reactgrad/ui test
 ```
