@@ -4,9 +4,17 @@ A modern monorepo boilerplate for rapidly building internal business web apps us
 
 Ideal for onboarding grad-level engineers into building pixel-perfect apps driven by a JSON schema.
 
+## 📚 On this page:
+
+- [🧱 Tech Stack](#-tech-stack)
+- [📁 Project Structure](#-project-structure)
+- [🛠️ Development Commands](#️-development-commands)
+- [🚀 Quick Start](#-quick-start)
+- [📖 Documentation](#-documentation)
+
 ---
 
-## 🧱 Tech stack
+## 🧱 Tech Stack
 
 | Tool             | Purpose                                   |
 |------------------|--------------------------------------------|
@@ -18,34 +26,47 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 
 ---
 
-## 📁 Folder structure
+## 📁 Project Structure
 
-```txt
-your-fork/
-├── apps/
-│   └── reactgrad-csr/      # Simple CSR react app
-├── packages/      
-│   └── ui/                 # Reusable UI elements across /apps/
-│   └── schema/             # Configuration as JSON
-│   └── renderer/           # Renders from schema
-├── turbo.json              # Turborepo pipeline config
-├── pnpm-workspace.yaml 
-└── package.json      
 ```
-
-## 📦 Commands:
-
-### Start a new app:
-```
-pnpm gen
+reactgrad-dev/
+├── 📱 apps/
+│   └── reactgrad-csr/          # Client-side React application
+├── 📦 packages/
+│   ├── ui/                     # Shared UI components & themes
+│   ├── schema/                 # JSON configuration schemas
+│   └── renderer/               # Schema-to-component renderer
+├── ⚙️  turbo.json              # Turborepo build pipeline
+├── 📋 pnpm-workspace.yaml      # Workspace configuration
+└── 📄 package.json             # Root dependencies
 ```
 
-### Build schema
-```
-pnpm build:config
+## 🛠️ Development Commands
+
+| Command | Description |
+|---------|-------------|
+| `pnpm gen` | 🆕 Generate a new application |
+| `pnpm build:config` | 🔧 Build configuration schema |
+| `pnpm --filter @reactgrad/ui test` | ✅ Run UI component tests |
+| `pnpm dev` | 🚀 Start development server |
+| `pnpm build` | 📦 Build all packages |
+| `pnpm lint` | 🔍 Lint all code |
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development
+pnpm dev
+
+# Run tests
+pnpm test
 ```
 
-### Run UI tests
-```
-pnpm --filter @reactgrad/ui test
-```
+## 📖 Documentation
+
+- **[Development Patterns](./PATTERNS.md)** - Coding standards, theme architecture, and best practices
+- **Component Library** - Browse available UI components in `/packages/ui/src/components`
+- **Theme System** - Multi-theme support for Bootstrap and Tailwind CSS
