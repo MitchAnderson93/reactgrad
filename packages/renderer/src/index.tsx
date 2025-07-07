@@ -6,6 +6,7 @@ import {
   Navigate
 } from 'react-router-dom';
 
+// Importing the Page component that renders the components for each page
 import { Page } from './functions/Page';
 
 // Shared UI package

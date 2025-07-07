@@ -1,4 +1,4 @@
-import type { TokenRegistry } from './types';
+import type { TokenRegistry } from '../../types';
 
 export async function getThemeFromConfig(theme: string | TokenRegistry): Promise<TokenRegistry> {
   if (typeof theme !== 'string') return theme;

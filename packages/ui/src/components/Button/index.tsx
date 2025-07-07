@@ -9,7 +9,7 @@ export interface ButtonProps {
   className?: string;
   type?: 'button' | 'submit' | 'reset';
   to?: string; // Support for routing
-  variant?: ButtonVariant; //Support for theme variants
+  variant?: ButtonVariant; // Support for theme variants
   onAction?: () => void; // New prop for handling actions
 }
 
@@ -32,6 +32,7 @@ export const Button: React.FC<ButtonProps> = ({
   
   const buttonClasses = `${tokens.button.base} ${tokens.button.variants[variant]} ${className || ''}`.trim();
 
+  // Handle click event, prioritizing onAction if provided
   const handleClick = () => {
     if (onAction) {
       onAction();

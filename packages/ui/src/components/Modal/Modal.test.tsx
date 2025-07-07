@@ -1,16 +1,21 @@
 import React from 'react';
+import { vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
-import { Modal } from '.';
 import { ThemeProvider } from '../../themes/ThemeProvider';
+
+// Component
+import { Modal } from '.';
+
+// Themes
+// Importing themes directly from the presets
 import tailwindTheme from '../../themes/presets/tailwind';
 import bootstrapTheme from '../../themes/presets/bootstrap';
-import { vi } from 'vitest';
-
 const themes = [
   { name: 'Tailwind', theme: tailwindTheme },
   { name: 'Bootstrap', theme: bootstrapTheme },
 ];
 
+// Test suite for Modal component
 describe('Modal Component', () => {
   themes.forEach(({ name, theme }) => {
     describe(`with ${name} theme`, () => {

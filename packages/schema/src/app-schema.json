@@ -13,6 +13,12 @@
           }
         },
         {
+          "type": "Text",
+          "props": {
+            "content": "Simple text"
+          }
+        },
+        {
           "type": "Button",
           "props": {
             "variant": "primary",
@@ -22,10 +28,10 @@
             "type": "Modal",
             "title": "List from API",
             "fetch": {
-              "url": "opendata:api/example"
+              "url": "https://api.restful-api.dev/objects"
             },
             "response": {
-              "target": "loadingBox.content"
+              "target": "loadingBox.data"
             },
             "components": [
               {
@@ -57,7 +63,7 @@
           }
         },
         {
-          "type": "Link",
+          "type": "Button",
           "props": {
             "to": "/",
             "label": "Back to Home"
