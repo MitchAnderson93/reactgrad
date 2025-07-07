@@ -1,6 +1,5 @@
 import type { PlopTypes } from "@turbo/gen";
 
-<<<<<<< HEAD
 // Define the answers interface
 interface GeneratorAnswers {
   name: string;
@@ -9,11 +8,6 @@ interface GeneratorAnswers {
 export default function generator(plop: PlopTypes.NodePlopAPI): void {
   plop.setGenerator("reactgrad-csr", {
     description: "Create a new client-side ReactGrad-based app in apps/",
-=======
-export default function generator(plop: PlopTypes.NodePlopAPI): void {
-  plop.setGenerator("reactgrad-app", {
-    description: "Create a new ReactGrad-based app in apps/",
->>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
     prompts: [
       {
         type: "input",
@@ -23,7 +17,6 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
       },
     ],
     actions: [
-<<<<<<< HEAD
       // Copy all files from the template
       {
         type: "addMany",
@@ -32,16 +25,6 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         base: "{{turbo.paths.root}}/apps/reactgrad-csr",
         globOptions: {
           dot: true, // Include dotfiles like .gitignore
-=======
-      // First, let's use a simple copy approach
-      {
-        type: "addMany",
-        destination: "apps/{{kebabCase name}}",
-        templateFiles: "apps/reactgrad-csr/**",
-        base: "apps/reactgrad-csr",
-        globOptions: {
-          dot: true, // Include dotfiles
->>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
           ignore: [
             '**/node_modules/**',
             '**/dist/**', 
@@ -49,11 +32,10 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
             '**/build/**'
           ]
         },
-<<<<<<< HEAD
         abortOnFail: false,
       },
       // Custom action to modify package.json
-      function (answers: GeneratorAnswers) {
+      function (answers: any) {
         const fs = require('fs');
         const path = require('path');
         
@@ -74,7 +56,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         }
       },
       // Custom action to update any other references
-      function (answers: GeneratorAnswers) {
+      function (answers: any) {
         const fs = require('fs');
         const path = require('path');
         
@@ -93,7 +75,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         return `✅ App "${appName}" created successfully`;
       },
       // Install dependencies
-      function (answers: GeneratorAnswers) {
+      function (answers: any) {
         const { execSync } = require('child_process');
         const appName = plop.getHelper('kebabCase')(answers.name);
         
@@ -109,7 +91,7 @@ export default function generator(plop: PlopTypes.NodePlopAPI): void {
         }
       },
       // Final success message with next steps
-      function (answers: GeneratorAnswers) {
+      function (answers: any) {
         const appName = plop.getHelper('kebabCase')(answers.name);
         return `
 🎉 Successfully created "${appName}"!
@@ -120,25 +102,6 @@ Next steps:
 
 Your new ReactGrad app is ready to go! 🚀
         `.trim();
-=======
-        abortOnFail: false, // Don't abort on single file failures
-      },
-      // Custom action to modify package.json
-      function (answers) {
-        const fs = require('fs');
-        const path = require('path');
-        
-        const packageJsonPath = path.join(process.cwd(), 'apps', plop.getHelper('kebabCase')(answers.name), 'package.json');
-        
-        if (fs.existsSync(packageJsonPath)) {
-          const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-          packageJson.name = plop.getHelper('kebabCase')(answers.name);
-          fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-          return `Updated package.json name to "${packageJson.name}"`;
-        } else {
-          return `Warning: package.json not found at ${packageJsonPath}`;
-        }
->>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
       }
     ],
   });

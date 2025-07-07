@@ -1,5 +1,4 @@
 import React from 'react';
-<<<<<<< HEAD
 import { vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { ThemeProvider } from '../../themes/ThemeProvider';
@@ -11,24 +10,12 @@ import { Modal } from '.';
 // Importing themes directly from the presets
 import tailwindTheme from '../../themes/presets/tailwind';
 import bootstrapTheme from '../../themes/presets/bootstrap';
-=======
-import { render, screen, fireEvent } from '@testing-library/react';
-import { Modal } from '.';
-import { ThemeProvider } from '../../themes/ThemeProvider';
-import tailwindTheme from '../../themes/presets/tailwind';
-import bootstrapTheme from '../../themes/presets/bootstrap';
-import { vi } from 'vitest';
-
->>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
 const themes = [
   { name: 'Tailwind', theme: tailwindTheme },
   { name: 'Bootstrap', theme: bootstrapTheme },
 ];
 
-<<<<<<< HEAD
 // Test suite for Modal component
-=======
->>>>>>> 7354c7f (WIP:DEV - Recent updates supporting multiple themes  (#2))
 describe('Modal Component', () => {
   themes.forEach(({ name, theme }) => {
     describe(`with ${name} theme`, () => {
