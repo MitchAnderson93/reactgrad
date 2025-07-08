@@ -1,4 +1,4 @@
-import type { ModalTokenMap } from '../../../../../types/modal/types';
+import type { ModalTokenMap } from '@reactgrad/types/modal';
 
 const bootstrapModalMap: ModalTokenMap = {
   backdrop: 'modal-backdrop fade show',

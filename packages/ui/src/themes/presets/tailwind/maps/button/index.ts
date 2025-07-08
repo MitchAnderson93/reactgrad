@@ -1,4 +1,4 @@
-import type { ButtonTokenMap } from '../../../../../types/button/types';
+import type { ButtonTokenMap } from '@reactgrad/types/button';
 
 const tailwindButtonMap: ButtonTokenMap = {
   base: 'px-4 py-2 rounded font-semibold transition',

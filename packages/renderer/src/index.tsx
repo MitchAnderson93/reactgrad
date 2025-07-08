@@ -6,11 +6,12 @@ import {
   Navigate
 } from 'react-router-dom';
 
+// Importing the Page component that renders the components for each page
 import { Page } from './functions/Page';
 
 // Shared UI package
+import type { TokenRegistry } from '@reactgrad/types';
 import { ThemeProvider, getThemeFromConfig } from '@reactgrad/ui';
-import type { TokenRegistry } from '@reactgrad/ui';
 
 // Main App Renderer that sets up the theme and routes
 export function AppRenderer({ config }: { config: any }) {
