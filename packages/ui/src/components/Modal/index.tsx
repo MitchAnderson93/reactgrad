@@ -48,7 +48,6 @@ export const Modal: React.FC<ModalProps> = ({
                     aria-label="Close"
                     data-testid="modal-close-button"
                   >
-                    ×
                   </button>
                 )}
               </div>
