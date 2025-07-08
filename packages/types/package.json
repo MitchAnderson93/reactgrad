@@ -1,0 +1,35 @@
+{
+  "name": "@reactgrad/types",
+  "version": "0.0.1",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./modal": {
+      "types": "./dist/modal/types.d.ts",
+      "import": "./dist/modal/types.js"
+    },
+    "./button": {
+      "types": "./dist/button/types.d.ts",
+      "import": "./dist/button/types.js"
+    },
+    "./text": {
+      "types": "./dist/text/types.d.ts",
+      "import": "./dist/text/types.js"
+    }
+  }
+}

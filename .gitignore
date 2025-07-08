@@ -37,3 +37,6 @@ coverage/
 # === Local environment ===
 .env
 .env.*
+
+# === Experimental ===
+other/

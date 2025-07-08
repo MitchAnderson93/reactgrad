@@ -1,4 +1,4 @@
-import type { TokenRegistry } from '../../utils/types';
+import type { TokenRegistry } from '@reactgrad/types';
 const modules = import.meta.glob('./maps/**/*.ts', { eager: true });
 
 // Debug

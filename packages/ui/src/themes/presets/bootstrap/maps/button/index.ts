@@ -1,4 +1,4 @@
-import type { ButtonTokenMap } from '../../../../../types/button/types';
+import type { ButtonTokenMap } from '@reactgrad/types/button';
 
 const bootstrapButtonMap: ButtonTokenMap = {
   base: 'btn', 

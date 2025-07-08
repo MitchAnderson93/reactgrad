@@ -1,4 +1,4 @@
-import type { ModalTokenMap } from '../../../../../types/modal/types';
+import type { ModalTokenMap } from '@reactgrad/types/modal';
 
 const tailwindModalMap: ModalTokenMap = {
   backdrop: 'fixed inset-0 bg-black bg-opacity-50 z-40',
