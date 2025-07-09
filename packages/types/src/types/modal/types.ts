@@ -1,7 +1,7 @@
 export interface ModalTokenMap {
   backdrop: string;
   container: string;
-  content: string;  // This maps to modal-dialog
+  content: string;  
   header: string;
   title: string;
   closeButton: string;
