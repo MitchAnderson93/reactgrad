@@ -8,7 +8,6 @@ interface DevEditorWrapperProps {
 
 export function DevEditorWrapper({ initialSchema }: DevEditorWrapperProps) {
   const initialJson = JSON.stringify(initialSchema, null, 2);
-
   const [json, setJson] = useState(initialJson);
   const [config, setConfig] = useState(initialSchema);
   const [editorKey, setEditorKey] = useState(0);
