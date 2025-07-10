@@ -47,8 +47,8 @@ reactgrad-dev/
 |---------|-------------|
 | `pnpm gen` | 🆕 Generate a new application |
 | `pnpm build:config` | 🔧 Build configuration schema |
-| `pnpm --filter @reactgrad/ui test` | ✅ Run UI component tests |
 | `pnpm dev` | 🚀 Start development server |
+| `pnpm test:ui` | ✅ Run UI component tests |
 | `pnpm build` | 📦 Build all packages |
 | `pnpm lint` | 🔍 Lint all code |
 

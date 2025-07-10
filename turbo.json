@@ -5,6 +5,10 @@
       "cache": false,
       "persistent": true
     },
+    "dev:editor": {
+      "cache": false,
+      "dependsOn": ["^dev:editor"]
+    },
     "build": {
       "outputs": ["dist/**"]
     },
