@@ -6,9 +6,13 @@ import { createRoot } from 'react-dom/client'
 import { AppRenderer } from '@reactgrad/renderer';
 import schema from '@reactgrad/schema';
 
-// Render the application'
+// Editor experience
+import { DevEditorWrapper } from '@reactgrad/editor';
+const isEditor = import.meta.env.MODE === 'editor';
+
+// Render the application
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <AppRenderer config={schema} />
+    {isEditor ? <DevEditorWrapper initialSchema={schema} /> : <AppRenderer config={schema} />}
   </StrictMode>,
 )

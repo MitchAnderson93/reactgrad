@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Action, ModalAction } from '../types/actions';
+import type { Action, ModalAction } from '@reactgrad/types';
 
 // Page functionality
 import { Page } from './Page';
@@ -57,7 +57,6 @@ export function ActionHandler({ action, onClose }: ActionHandlerProps) {
   const updateTargetComponent = (target: string, newData: any, originalComponents: any[]) => {
     // Parse target like "loadingBox.data" -> { id: "loadingBox", prop: "data" }
     const [targetId, targetProp] = target.split('.');
-    
     const updatedComponents = originalComponents.map(component => {
       if (component.id === targetId) {
         return {

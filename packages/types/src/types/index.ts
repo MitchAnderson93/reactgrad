@@ -7,3 +7,5 @@ export interface TokenRegistry {
   modal: ModalTokenMap;
   text: TextTokenMap;
 }
+
+export * from './actions/index';
