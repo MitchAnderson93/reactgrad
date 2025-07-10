@@ -7,7 +7,6 @@
     },
     "dev:editor": {
       "cache": false,
-      "dependsOn": ["^dev:editor"],
       "persistent": true
     },
     "build": {

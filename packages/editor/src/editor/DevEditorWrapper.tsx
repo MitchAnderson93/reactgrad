@@ -19,8 +19,8 @@ export function DevEditorWrapper({ initialSchema }: DevEditorWrapperProps) {
     try {
       const parsed = JSON.parse(value || '{}');
       setConfig(parsed);
-    } catch {
-      // Optionally show a toast or visual indicator
+    } catch (error){
+      console.warn('Invalid JSON input:', error);
     }
   };
 

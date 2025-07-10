@@ -10,7 +10,7 @@ import schema from '@reactgrad/schema';
 import { DevEditorWrapper } from '@reactgrad/editor';
 const isEditor = import.meta.env.MODE === 'editor';
 
-// Render the application'
+// Render the application
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     {isEditor ? <DevEditorWrapper initialSchema={schema} /> : <AppRenderer config={schema} />}
