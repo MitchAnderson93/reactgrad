@@ -4,9 +4,7 @@ import schema from '@reactgrad/schema/dist/app-schema.json' assert { type: 'json
 
 // https://vite.dev/config/
 export default defineConfig({
-  define: {
-    __EDITOR__: JSON.stringify(process.env.MODE === 'editor'),
-  },
+  define: {},
   plugins: [
     react(),
     {

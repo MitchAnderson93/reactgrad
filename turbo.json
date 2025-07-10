@@ -7,7 +7,8 @@
     },
     "dev:editor": {
       "cache": false,
-      "dependsOn": ["^dev:editor"]
+      "dependsOn": ["^dev:editor"],
+      "persistent": true
     },
     "build": {
       "outputs": ["dist/**"]

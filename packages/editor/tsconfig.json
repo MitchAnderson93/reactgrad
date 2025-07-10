@@ -6,8 +6,7 @@
     "jsx": "react-jsx",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "types": ["vitest", "vite/client"]
+    "strict": true
   },
   "include": ["src", "**/*.ts", "**/*.tsx"]
 }

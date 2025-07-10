@@ -4,7 +4,7 @@ import { AppRenderer } from '@reactgrad/renderer';
 import { Editor } from '@monaco-editor/react';
 
 interface DevEditorWrapperProps {
-  initialSchema: any; // optionally type with z.infer<typeof configSchema>
+  initialSchema: any;
 }
 
 export function DevEditorWrapper({ initialSchema }: DevEditorWrapperProps) {
@@ -20,19 +20,42 @@ export function DevEditorWrapper({ initialSchema }: DevEditorWrapperProps) {
       const parsed = JSON.parse(value || '{}');
       setConfig(parsed);
     } catch {
-      // Optional: show a toast or highlight error in JSON
+      // Optionally show a toast or visual indicator
     }
   };
 
   return (
-    <div className="flex h-screen w-screen overflow-hidden">
-      {/* App preview */}
-      <div className="flex-shrink-0 w-3/4 h-full border-r overflow-auto">
+    <div
+      data-layout="editor-wrapper"
+      style={{
+        display: 'flex',
+        width: '100vw',
+        height: '100vh',
+        overflow: 'hidden',
+      }}
+    >
+      {/* App Preview */}
+      <div
+        data-layout="preview"
+        style={{
+          flex: '3 0 0',
+          height: '100%',
+          overflow: 'auto',
+          borderRight: '1px solid #ccc',
+        }}
+      >
         <AppRenderer config={config} />
       </div>
 
       {/* Editor */}
-      <div className="flex-shrink-0 w-1/4 h-full bg-gray-100">
+      <div
+        data-layout="json-editor"
+        style={{
+          flex: '1 0 0',
+          height: '100%',
+          background: '#f6f8fa', 
+        }}
+      >
         <Editor
           height="100%"
           defaultLanguage="json"

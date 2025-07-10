@@ -1,2 +1,2 @@
 // Editor UI/editor mode
-export { DevEditorWrapper } from './EditorWrapper';
+export { DevEditorWrapper } from './editor/DevEditorWrapper';
