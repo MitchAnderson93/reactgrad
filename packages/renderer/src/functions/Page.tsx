@@ -3,7 +3,7 @@ import { componentMap } from '@reactgrad/ui';
 
 // Actions in page
 import { ActionHandler } from './ActionHandler';
-import type { ComponentConfig, Action } from '../types/actions';
+import type { ComponentConfig, Action } from '@reactgrad/types';
 
 interface PageProps {
   components: ComponentConfig[];

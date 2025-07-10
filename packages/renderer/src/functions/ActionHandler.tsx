@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import type { Action, ModalAction } from '../types/actions';
+import type { Action, ModalAction } from '@reactgrad/types';
 
 // Page functionality
 import { Page } from './Page';
