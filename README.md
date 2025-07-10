@@ -6,15 +6,15 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 
 ## 📚 On this page:
 
-- [🧱 Tech Stack](#-tech-stack)
-- [📁 Project Structure](#-project-structure)
-- [🛠️ Development Commands](#️-development-commands)
-- [🚀 Quick Start](#-quick-start)
-- [📖 Documentation](#-documentation)
+- 🧱 [Tech stack](#-tech-stack)
+- 📁 [Project structure](#-project-structure) 
+- 🛠️ [Development commands](#️-development-commands)
+- 🚀 [Quick start](#-quick-start)
+- 📖 [Documentation](#-documentation)
 
 ---
 
-## 🧱 Tech Stack
+## 🧱 Tech stack
 
 | Tool             | Purpose                                   |
 |------------------|--------------------------------------------|
@@ -26,7 +26,7 @@ Ideal for onboarding grad-level engineers into building pixel-perfect apps drive
 
 ---
 
-## 📁 Project Structure
+## 📁 Project structure
 
 ```
 reactgrad-dev/
@@ -41,18 +41,19 @@ reactgrad-dev/
 └── 📄 package.json             # Root dependencies
 ```
 
-## 🛠️ Development Commands
+## 🛠️ Development commands
 
 | Command | Description |
 |---------|-------------|
 | `pnpm gen` | 🆕 Generate a new application |
 | `pnpm build:config` | 🔧 Build configuration schema |
-| `pnpm --filter @reactgrad/ui test` | ✅ Run UI component tests |
+| `pnpm dev:editor` | 🚀 Start development server with in-page JSON editor |
 | `pnpm dev` | 🚀 Start development server |
+| `pnpm test:ui` | ✅ Run UI component tests |
 | `pnpm build` | 📦 Build all packages |
 | `pnpm lint` | 🔍 Lint all code |
 
-## 🚀 Quick Start
+## 🚀 Quick start
 
 ```bash
 # Install dependencies

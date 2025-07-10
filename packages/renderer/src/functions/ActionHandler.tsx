@@ -57,7 +57,6 @@ export function ActionHandler({ action, onClose }: ActionHandlerProps) {
   const updateTargetComponent = (target: string, newData: any, originalComponents: any[]) => {
     // Parse target like "loadingBox.data" -> { id: "loadingBox", prop: "data" }
     const [targetId, targetProp] = target.split('.');
-    
     const updatedComponents = originalComponents.map(component => {
       if (component.id === targetId) {
         return {

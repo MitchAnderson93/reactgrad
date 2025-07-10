@@ -7,6 +7,7 @@
     "new": "turbo gen reactgrad-app",
     "build:config": "turbo --filter @reactgrad/schema build",
     "dev": "turbo run dev",
+    "dev:editor": "turbo run dev:editor --filter=reactgrad-csr",
     "build": "turbo run build",
     "test": "turbo run test",
     "test:ui": "turbo --filter @reactgrad/ui test"
