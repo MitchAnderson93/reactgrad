@@ -112,7 +112,7 @@ export function DevEditorWrapper({ initialSchema }: DevEditorWrapperProps) {
               height: '100%',
               transition: 'background 0.2s',
             }}
-            onMouseEnter={e => (e.currentTarget.style.background = '#3c3c3c')}
+            onMouseEnter={e => (e.currentTarget.style.background = '#15803d')}
             onMouseLeave={e => (e.currentTarget.style.background = '#252526')}
           >
             Download
@@ -132,7 +132,7 @@ export function DevEditorWrapper({ initialSchema }: DevEditorWrapperProps) {
               height: '100%',
               transition: 'background 0.2s',
             }}
-            onMouseEnter={e => (e.currentTarget.style.background = '#3c3c3c')}
+            onMouseEnter={e => (e.currentTarget.style.background = '#15803d')}
             onMouseLeave={e => (e.currentTarget.style.background = '#252526')}
           >
             Upload
