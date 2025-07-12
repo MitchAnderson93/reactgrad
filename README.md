@@ -1,4 +1,4 @@
-# 🚀 ReactGrad starter
+# 🚀 Reactgrad starter
 
 A modern monorepo boilerplate for rapidly building internal business web apps using **React**, **TypeScript**, **Vite**, **pnpm**, and **Turborepo**.
 
@@ -60,11 +60,17 @@ reactgrad-dev/
 pnpm install
 
 # Start development
-pnpm dev
+pnpm dev 
+
+# Start development + run embedded JSON editor in browser
+pnpm dev:editor 
 
 # Run tests
 pnpm test
 ```
+
+## 🛠️ In-page editor
+<img src="./turbo/assets/image.png" alt="ReactGrad Development Screenshot">
 
 ## 📖 Documentation
 
