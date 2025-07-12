@@ -65,13 +65,12 @@ pnpm dev
 # Start development + run embedded JSON editor in browser
 pnpm dev:editor 
 
-# This includes the ability to download/upload the app-schema.json:
-```
-<img src="./turbo/assets/image.png" alt="ReactGrad Development Screenshot">
-```bash
 # Run tests
 pnpm test
 ```
+
+## 🛠️ In-page editor
+<img src="./turbo/assets/image.png" alt="ReactGrad Development Screenshot">
 
 ## 📖 Documentation
 
